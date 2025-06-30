@@ -31,9 +31,9 @@ end
 setupAntiAFK()
 
 -- Create Main Window
-local window = library:AddWindow("HONNYDEZZ - SCRIP PUBLICO", {
+local window = library:AddWindow("HONNYDEZZ - SCRIPT PUBLICO", {
     main_color = Color3.fromRGB(144, 0, 194),
-    min_size = Vector2.new(550, 600),
+    min_size = Vector2.new(660, 700),
     can_resize = true,
 })
 
@@ -42,7 +42,7 @@ local mainTab = window:AddTab("Main")
 local farmPlusTab = window:AddTab("Farm")
 mainTab:Show() -- Show this tab by default
 
-mainTab:AddLabel("HONNYDEZZ|SCRIP PUBLICO")
+mainTab:AddLabel("HONNYDEZZ | SCRIPT PUBLICO")
 
 
 -- Add Anti-AFK toggle
@@ -1957,7 +1957,7 @@ local function useOneEgg()
     ReplicatedStorage.rEvents.proteinEggEvent:FireServer("useEgg")
 end
 
-rebirthFarmFolder:AddLabel("OP Rebirth Farm (From HAVOC)")
+rebirthFarmFolder:AddLabel("OP Rebirth Farm (From Honnydezz)")
 
 rebirthFarmFolder:AddTextBox("Target Rebirth (Doesn't work, I Won't make it work)", function(text)
     targetRebirth = tonumber(text) or math.huge
